@@ -1,0 +1,27 @@
+@media (max-width: 600px) {
+
+  .products
+  {
+    /*Para que las cajas de los productos ya no esten horizontal
+    si no vertical*/
+    display: inherit;
+    /* Que tenga una altura que crezca natural */
+    height: auto;
+  }
+
+  .product
+  {
+    margin-top: auto;
+  }
+
+  /*Disminuimos el padding ya que es grande para una version mobile*/
+  .main_section
+  {
+    padding: 4%;
+  }
+
+  .descriptions, .coments
+  {
+    display: inherit;
+  }
+}

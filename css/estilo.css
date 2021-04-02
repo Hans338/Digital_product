@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/* VARIABLES
+cuando se repiten varios elementos en el css
+*/
+:root
+{
+  /*--green-color son variables creadas por el programador*/
+  --green-color: #7ACC2D;
+  --white-color: white;
+  --black-color: #313337;
+  /* Tipografia */
+  --normal:12px;
+  /* Espaciado */
+  --space: 10px;
+  /* Box shadow */
+  --box: 0px 0 2px 1px #e6e5e9;
+}
+
+
+html,body
+{
+  //margen que tiene alrrededor de la pagina
+  padding:0px;
+  margin:0px;
+  /* Cambiar tamanio de tipografia */
+  font-size: var(--normal);
+  /* Cambiar el estilo de la letra */
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, label
+{
+  font-size: var(--normal);
+}
+
+label
+{
+  padding-bottom: var(--space);
+}
+
+nav
+{
+  /* Flex ayuda de pasar los elementos de vertical a horizontal de la barra
+  de menu*/
+  display: flex;
+
+  background-color: var(--green-color);
+  /* Espacio en la barra de menu
+  los numeros pueden ser: 10px, 15,20,25,etc redondeados
+  */
+  padding: var(--space);
+  /* Dentro del nav */
+  color: var(--white-color);
+
+  /* Separar el logo con los elementos de lista del menu
+  separa la clase de brand_image de la de nav_options*/
+  justify-content: space-between;
+  /* Alineamos los items en el centro vertical*/
+  align-items: center;
+}
+
+/* Los uls(o listas) de las nav tengan estas reglas */
+nav ul
+{
+  display: flex;
+}
+
+nav li
+{
+  /* Espacios entre los li a la izquierda */
+  padding-left: 20px;
+  /* Quitar las bolitas de los costados de la lista */
+  list-style: none;
+}
+
+/* Estilos para los link de las listas */
+nav li a
+{
+  color: var(--black-color);
+  /* Borra el subrrayado de los links */
+  text-decoration: none;
+}
+
+/* Acciones que puede tener un boton
+Es cuando pasamos el cursor por los li y cambia de color
+*/
+nav li a:hover
+{
+  color:var(--white-color);
+}
+
+
+/*------------ MAIN SECTION*/
+.main_section
+{
+  /* Hacer que el texto vaya en el centro */
+  padding: 15%;
+  /* Centrar el texto */
+  text-align: center;
+}
+
+.products
+{
+  background-image: url("../images/curve.png");
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+
+.product
+{
+  padding: var(--space);
+  margin-top: -240px;
+}
+
+.product .content
+{
+  background-color: var(--white-color);
+  padding: 15px;
+  /* Sombras alrrededor de los elementos */
+  box-shadow: var(--box);
+}
+
+.img_content
+{
+  text-align: center;
+}
+
+/* Para los botones */
+.main_button
+{
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: 17px;
+  color: white;
+  border: 0;
+  /* Para la manito del sistema en el boton */
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover
+{
+  background-color: #5e9e22;
+}
+/***********************************/
+.descriptions
+{
+  max-height: 80px;
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+
+.description
+{
+  padding: var(--space);
+  margin-top: -100px;
+}
+
+.description .conten2
+{
+  background-color: var(--white-color);
+  padding: 20px;
+  /* Sombras alrrededor de los elementos */
+  box-shadow: var(--box);
+}
+
+.img_description
+{
+  text-align: center;
+}
+
+/***************************************/
+.coments
+{
+  max-height: 80px;
+  background-size: cover;
+  background-position: center top;
+  padding: 20px;
+  display: flex;
+}
+
+.coment
+{
+  padding: var(--space);
+  margin-top: -30px;
+  border-radius: 60px;
+}
+
+.coment .conten3
+{
+  background-color: #988BB7;
+  padding: 20px;
+  /* Sombras alrrededor de los elementos */
+  box-shadow: var(--box);
+}
+
+.img_coment
+{
+  text-align: center;
+}
+
+
+/*PARA LOS DATOS*/
+.formulario
+{
+  padding: 50px;
+  margin-top: 50px;
+  border-radius: 60px;
+}
+
+.formulario .datos
+{
+  padding: 20px;
+}
+
+
+/************************************************************ VENTA */
+.modulo_pago
+{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+
+.modulo_pago_images
+{
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin:auto;
+}
+
+.data
+{
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+
+/*PARA EL BOTON*/
+.modulo_pago .main_btn
+{
+  margin-top: 10px;
+}
+
+
+.footer
+{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
+
+.contact a
+{
+  color:var(--green-color);
+}
